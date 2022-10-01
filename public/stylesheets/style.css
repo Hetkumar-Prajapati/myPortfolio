@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Lato:ital,wght@0,400;0,700;1,400&family=Playfair+Display&display=swap');
+
+body {
+  padding: 10px;
+  font-size: 14px ;
+  font-family: 'Lato', sans-serif;
+}
+
+a {
+  font-weight: bold;
+}
+
+.nav-link{
+  color: black;  
+  font-size: 20px;
+}
+
+.btn-primary {
+  background-color: #8BC34A;
+}
+
+/* navbar */
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
