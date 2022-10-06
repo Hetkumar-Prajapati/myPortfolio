@@ -1,111 +1,189 @@
-@import url('https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Acme&family=Anton&family=Dangrek&family=Lato:ital,wght@0,400;0,700;1,400&family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Acme&family=Anton&family=Dangrek&family=Francois+One&family=Lato:ital,wght@0,400;0,700;1,400&family=Mitr:wght@400;500;700&family=Montserrat&family=Playfair+Display&family=Roboto+Mono:wght@400;700&family=Rubik:wght@400;500&display=swap');
+/* font-family: 'Montserrat', sans-serif; */
+BODY{
+  height: 100vh;
+  background: linear-gradient(
+    to right,
+    rgb(255, 255, 255) 0%,
+    rgb(255, 255, 255) 50%,
+    rgb(255, 194, 201) 50%,
+    rgb(255, 194, 201) 100%
 
+  );
+}
+html{
+  scroll-behavior: smooth;
+}
 *{
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-body {
-  font-size: 14px ;
-  font-family: 'Lato', sans-serif;
 }
 
-a {
-  font-weight: bold;
-}
-nav{
-  padding-bottom:40px ;
-}
-
-header> div{
-  height: 90px;
-  flex-grow: 1; /*this property dictate which flex item will get more space*/
-  /* since we want our nav to move to the right so we will give majority of apce to div using flex-grow  */
-
-}
-
-header> div > a > img{
-  height: 100%;
-  width: auto;
-}
-
-header >  nav > ul{
-  margin-bottom: 0px;
-  list-style: none; 
-  display: flex;/* this make a flex box of the element , here the element is nav */
-}
-
-header > nav > ul >li{
-  padding: 0px 15px ;
-}
-
-header > nav > ul > li >a  {
+li ,a,button{
+  font-family:'Montserrat', sans-serif;
+  font-weight: bolder;
+  font-size: 14px;
   color: black;
+  text-decoration: none;
+}
+.logo{
+  height: 62px;
+  width: 160px;
+  cursor: pointer;
+  margin-left: 100px;
 }
 
-
-.nav-link{
-  color: black;  
-  font-size: 20px;
-}
-
-#navbar li{
+header{
+  /* position: fixed; */
   display: flex;
-  align-items: flex-end;
-  align-items:flex-end;
-  padding: 10px;
-  font-size: 20px;
-  font-weight : bold;
-}
-.sticky{
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: white;
-  color: black;
-}
-
-.btn-primary {
-  background-color: #8BC34A;
-}
-
-.home_title{
-  font-size: 55px;
-  font-family: 'Acme', sans-serif;
-}
-
-.home_title-color{
-  color: #303F9F;
-  font-family: 'Dangrek', cursive;
-  font-size: 75px;
-}
-
-span{
-  padding-left: 20px;
-}
-
-.btn-container{
-  padding-top: 40px;
-}
-.btn{
-  padding: 7px 30px 7px 30px;
-}
-/* image  */
-.wrapper{
-  display: flex;  
   justify-content: space-between;
   align-items: center;
-  padding: 130px;
-  height: 100vh;
 }
-.item{
-  width: 50%;
-  padding-top:70px ;
-}
-.item img{
+header.sticky{
+  transition: 0.5s;
+  background-color: white;
+  position: fixed;
   width: 100%;
-  border-radius:10%;
-  box-shadow:15px 6px 30px 0px black;
   
 }
- 
+
+.nav_links{
+  list-style: none;
+  padding: 10px;
+  padding-bottom: 0;
+}
+.nav_links li{
+  display: inline-block;
+  padding: 0px 20px ;
+}
+/*  */
+.nav_links li a::after{
+  content: "";
+  width: 0;
+  height: 3px;
+  background-color: #303F9F;
+  margin: auto;
+  display: block;
+}
+
+.nav_links li a:hover::after{
+  width: 100%;
+  transition:width 0.3s linear;
+}
+
+
+.nav_links li a:hover{
+  color: #303F9F;
+}
+
+.contact-btn{
+  padding: 9px 25px;
+  background-color: #c2abfc;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  margin-left: 30px;
+  margin-right: 150px;
+}
+
+.contact-btn:hover{
+  background-color: rgba(0, 136, 169, 0.8);
+}
+
+#first-page{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 150px;
+  height: 120vh;
+}
+#zero{
+  font-family: 'Mitr', sans-serif;
+  font-size: 20px;
+  color: #303F9F;
+  font-weight:700;
+}
+#two{
+  font-size: 70px;
+  font-family: 'Rubik', sans-serif;
+}
+
+.wrapper{
+  font-family: 'Montserrat', sans-serif;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  padding-left: 127px;
+  margin: 0;
+}
+.static-txt{
+  font-size: 30px;
+  font-weight: 600;
+  padding-bottom: 19px;
+}
+.wrapper .dynamic-txt{
+  line-height: 60px;
+  height: 60px;
+  overflow: hidden;
+}
+
+.dynamic-txt li{
+  list-style: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  font-weight:700;
+  /* padding-top:8px ; */
+  top: 0;
+  position: relative;
+  animation: slide 12s steps(4)
+  infinite;
+}
+@keyframes slide{
+  100% {
+    top: -240px;
+  }
+}
+.dynamic-txt li{
+  position: relative;
+}
+
+.dynamic-txt{
+  padding-left: 14px ;
+}
+.dynamic-txt li{
+  position: relative;
+} 
+.dynamic-txt li::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-left:2px solid black ;
+  animation: typing 3s steps(10) 
+  infinite;
+  background-color: rgb(255, 194, 201);
+}
+@keyframes typing{
+  40%,
+  60%{
+    left: calc(100% + 30px);
+  }
+  100%{
+    left: 0;
+  }
+}
+
+.fw-bold{
+  color: rgb(87, 87, 87);
+}
+.light{
+  color: rgb(102, 102, 102);
+}
+.svg{
+  width: 20px;
+  height: 20px;
+}
