@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>{{title}}</title>
+  <title>{{title}}</title> 
 
   <!-- CSS only -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -31,20 +31,7 @@
     </nav>
   </header>
 
-  <section id="first-page">
-    <h3 id="zero">HEY! I AM</h3>
-    <h1 id="two">HET</h1>
-    <h1 id="two">PRAJAPATI</h1>
-    <div class="wrapper">
-      <div class="static-txt">I'm a</div>
-      <ul class="dynamic-txt">
-        <li><span>Programmer</span></li>
-        <li><span>Developer</span></li>
-        <li><span>Designer</span></li>
-        <li><span>Learner</span></li>
-      </ul>
-    </div>
-  </section>
+ {{{body}}}
 
   {{!-- footer --}}
   <footer class="text-center text-lg-start bg-light text-muted">
@@ -168,11 +155,32 @@
   <script>
     window.addEventListener('scroll', function () {
       var header = document.querySelector("header");
-      header.classList.toggle("sticky", window.scrollY > 500);
+      header.classList.toggle("sticky", window.scrollY > 450);
     });
   </script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail() {
+            Email.send({
+                Host: "smtp.gamil.com",
+                Username: "hetprajapati.work@gmail",
+                Password: "#Beinghet04",
+                To: 'hetprajapati720@gmail.com',
+                From: document.getElementById("email").value,
+                Subject: "New Contact of inquiry",
+                Body: "Name: "+document.getElementById("name").value +
+                      "message: "+document.getElementById("message").value +
+                      "email: "+document.getElementById("email").value +
+                      "phone: "+document.getElementById("phone").v      
+            }).then(
+                message => alert("Message sent succesful")
+            );
+        }
+    </script>
 </body>
 
 </html>

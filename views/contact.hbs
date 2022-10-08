@@ -1,2 +1,42 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+<section>
+    <div class="box">
+        <h1 class="contact-title">Contact Me</h1>
+        <p class="contact-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero minima fugit dolorum, natus et exercitationem?</p>
+        <p class="contact-content">Vokalia and Consonantia</p>
+    </div>
+    <div class="flexContainer">
+        <div class="flexItem">
+            <ion-icon class="contact-icon" name="paper-plane-sharp"></ion-icon>
+            <h2>Address</h2>
+            <p style="color:rgb(85, 85, 85)">New York, NY 10012, US</p>
+        </div>
+        <div class="flexItem">
+            <ion-icon class="contact-icon " name="call"></ion-icon>
+            <h2>Contact </h2>
+            <p style="color:#1976D2">705-627-8233</p>
+        </div>
+        <div class="flexItem">
+            <ion-icon class="contact-icon" name="mail-open-sharp"></ion-icon>
+            <h2>Email</h2>
+            <p style="color:#1976D2">hetprajapati720 <span>@gmail.com</span></p>
+        </div>
+        <div class="flexItem">
+            <ion-icon class="contact-icon " name="laptop-sharp"></ion-icon>
+            <h2>Website</h2>
+            <p><a style="color:#1976D2;" href="https://hetkumarprajapati.onrender.com">Check MyPortfolio</a></p>
+        </div>
+    </div>
+
+    <div class="contactContainer">
+        <form onsubmit="sendEmail(); reset(); return false;">
+            <h1>GET IN TOUCH</h1>
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="emial" placeholder="Your Email Id" required>
+            <input type="text" id="phone" placeholder="Phone Number" required>
+            <textarea id="message" rows="4" placeholder="How can i help you"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+
+
+</section>
