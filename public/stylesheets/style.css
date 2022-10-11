@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Acme&family=Anton&family=Dangrek&family=Francois+One&family=Lato:ital,wght@0,400;0,700;1,400&family=Mitr:wght@400;500;700&family=Montserrat&family=Playfair+Display&family=Roboto+Mono:wght@400;700&family=Rubik:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Acme&family=Anton&family=Dangrek&family=Francois+One&family=Lato:ital,wght@0,400;0,700;1,400&family=Mitr:wght@400;500;700&family=Montserrat&family=Playfair+Display&family=Roboto+Mono:wght@400;700&family=Rubik:wght@400;500&family=Satisfy&display=swap');
 /* font-family: 'Montserrat', sans-serif; */
 BODY{
   height: 100vh;
@@ -40,6 +40,7 @@ header{
   justify-content: space-between;
   align-items: center;
   /* background-color: white;  */
+  z-index: 2;
 }
 header.sticky{
   transition: 0.5s;
@@ -52,6 +53,7 @@ header.sticky{
 .nav_links{
   list-style: none;
   padding: 10px;
+  margin-right: 25px;
   padding-bottom: 0;
 }
 .nav_links li{
@@ -81,7 +83,7 @@ header.sticky{
 .contact-btn{
   padding: 9px 25px;
   background-color: #c2abfc;
-  border: none;
+  border:black 1px solid;
   border-radius: 50px;
   cursor: pointer;
   transition: all 0.3s ease 0s;
@@ -188,6 +190,36 @@ header.sticky{
   width: 20px;
   height: 20px;
 }
+
+.resume{
+  padding: 16px 35px;
+  text-decoration: none;
+  border:black 1px solid;
+  border-radius: 35px;
+  letter-spacing: 2px;
+  color: black;
+  position: absolute;
+  font-weight: 900;
+}
+.resume:hover{
+  background-color: white;
+}
+
+.resume-btn{
+  padding: 16px 35px;
+  background-color: white;
+  border:black 1px solid;
+  border-radius: 35px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  margin-left: 170px;
+  font-weight: 900;
+}
+
+.resume-btn:hover{
+  background-color: rgba(13, 255, 90, 0.8);
+}
+
 /* /////////projects ////////////////// */
 
 .workContainer {
@@ -346,4 +378,37 @@ form button{
     width: 150px;
     margin: 20px auto 0;
     border-radius: 30px;
+}
+
+/* ////////////////////////about////////////////////// */
+.scroll-box{
+  display: flex;
+  padding-top: 70px;
+}
+.sub-container section{
+  width: 70%;
+  padding: 0 35px;
+  padding-top:25px ;
+  margin: 15px 0;
+}
+.sub-container aside{
+  width: 30%;
+  margin: 35px 0;
+}
+.sub-container aside .aside-box{
+  position: sticky;
+  -webkit-position: sticky;
+  top:70px;
+  z-index: 1;
+  padding-right: 40px;
+}
+.box2{
+    text-align: center;
+    padding-top: 60px;
+}
+.columns{
+  column-count: 3;
+  column-gap: 30px;
+  column-rule: 1px solid black;
+  text-align: justify;
 }
