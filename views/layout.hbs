@@ -161,20 +161,22 @@
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
     <script src="https://smtpjs.com/v3/smtp.js"></script>
+    
     <script>
         function sendEmail() {
             Email.send({
-                Host: "smtp.gamil.com",
-                Username: "hetprajapati.work@gmail",
-                Password: "#Beinghet04",
+                Host: "smtp.elasticemail.com",
+                Username: "hetprajapati720@gmail.com",
+                Password: "5F93A78FB587230E91872D43DD502D30D161",
                 To: 'hetprajapati720@gmail.com',
                 From: document.getElementById("email").value,
                 Subject: "New Contact of inquiry",
                 Body: "Name: "+document.getElementById("name").value +
-                      "message: "+document.getElementById("message").value +
-                      "email: "+document.getElementById("email").value +
-                      "phone: "+document.getElementById("phone").v      
+                      "/n message: "+document.getElementById("message").value +
+                      "/n email: "+document.getElementById("email").value +
+                      "/n phone: "+document.getElementById("phone").v      
             }).then(
                 message => alert("Message sent succesful")
             );
