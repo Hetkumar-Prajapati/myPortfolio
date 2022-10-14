@@ -1,5 +1,5 @@
 # myPortfolio
-To visualy see My Portfolio visit my website at  https://hetkumarprajapati.onrender.com
+To visually see My Portfolio visit my website at  https://hetkumarprajapati.onrender.com
 
 ### This is my portfolio website:
 ------------------------------
