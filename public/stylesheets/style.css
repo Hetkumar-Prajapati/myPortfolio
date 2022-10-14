@@ -72,7 +72,7 @@ header.sticky{
 
 .nav_links li a:hover::after{
   width: 100%;
-  transition:width 0.3s linear;
+  transition:width 0.3s linear; 
 }
 
 
@@ -206,14 +206,14 @@ header.sticky{
 }
 
 .resume-btn{
-  padding: 16px 35px;
-  background-color: white;
-  border:black 1px solid;
-  border-radius: 35px;
-  cursor: pointer;
-  transition: all 0.3s ease 0s;
-  margin-left: 170px;
-  font-weight: 900;
+    padding: 16px 35px;
+    background-color: white;
+    border:black 1px solid;
+    border-radius: 35px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin-left: 170px;
+    font-weight: 900;
 }
 
 .resume-btn:hover{
